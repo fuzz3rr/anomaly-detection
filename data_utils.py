@@ -1,8 +1,7 @@
-import os
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-
+from sklearn.feature_selection import VarianceThreshold
 
 def load_data(file_paths):
     dfs = []
@@ -47,6 +46,19 @@ def preprocess_data(data):
     data = data.replace([np.inf, -np.inf], np.nan)
     data = data.dropna()
 
+    y = data["Label"]
+    X = data.drop("Label", axis=1)
+
+    print("\n  >> Feature selection...")
+
+    X = drop_low_variance_features(X, threshold=0.0)
+
+    X = drop_high_correlation_features(X, threshold=0.95)
+
+    data = pd.concat([X, y], axis=1)
+
+    print(f"\nFeatures remaining after preprocessing: {X.shape[1]}")
+
     return data
 
 
@@ -65,3 +77,33 @@ def scale_features(X_train, X_test):
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
     return X_train_scaled, X_test_scaled
+
+
+
+def drop_low_variance_features(data, threshold=0.0):
+    selector = VarianceThreshold(threshold=threshold)
+
+    selector.fit(data)
+    kept_columns = data.columns[selector.get_support(indices=True)]
+    dropped_columns = list(set(data.columns) - set(kept_columns))
+
+    if dropped_columns:
+        print(f"Removed low-variance features: {len(dropped_columns)} columns")
+
+    return data[kept_columns]
+
+
+
+def drop_high_correlation_features(data, threshold=0.9):
+    corr = data.corr().abs()
+
+    upper = corr.where(
+        np.triu(np.ones(corr.shape), k=1).astype(bool)
+    )
+
+    to_drop = [col for col in upper.columns if any(upper[col] > threshold)]
+
+    if to_drop:
+        print(f"Removed highly correlated features (> {threshold}): {to_drop}")
+
+    return data.drop(columns=to_drop, errors="ignore")
