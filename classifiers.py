@@ -35,8 +35,20 @@ class Classifier:
 
         # Handle case where not all classes are present in predictions/test
         unique_labels = sorted(set(y_test) | set(y_pred))
-        actual_target_names = [target_names[i] for i in unique_labels] if len(unique_labels) < len(
-            target_names) else target_names
+        
+        # Convert target_names to strings if needed
+        target_names_str = [str(name) for name in target_names]
+        
+        # Handle cases where labels don't start at 0 or target_names index doesn't match
+        if len(unique_labels) <= len(target_names_str):
+            # Try to map labels to target_names by index
+            try:
+                actual_target_names = [target_names_str[i] for i in unique_labels]
+            except IndexError:
+                # Labels don't match indices, use labels as names
+                actual_target_names = [str(label) for label in unique_labels]
+        else:
+            actual_target_names = [str(label) for label in unique_labels]
 
         report = classification_report(
             y_test, y_pred,

@@ -15,10 +15,19 @@ def load_data(file_paths, dataset_config):
     dfs = []
     label_column = dataset_config.get("label_column", "Label")
     column_mapping = dataset_config.get("column_mapping", {})
+    has_header = dataset_config.get("has_header", True)
 
     for fp in file_paths:
-        df = pd.read_csv(fp, on_bad_lines="skip", low_memory=False)
-        df.columns = df.columns.str.strip()
+        if has_header:
+            df = pd.read_csv(fp, on_bad_lines="skip", low_memory=False)
+            df.columns = df.columns.str.strip()
+        else:
+            # Read CSV without headers and generate column names
+            df = pd.read_csv(fp, on_bad_lines="skip", low_memory=False, header=None)
+            # Generate column names: col_0, col_1, ..., col_N-2, <label_column>
+            num_cols = len(df.columns)
+            col_names = [f"col_{i}" for i in range(num_cols - 1)] + [label_column]
+            df.columns = col_names
 
         # Apply column mapping if specified
         if column_mapping:

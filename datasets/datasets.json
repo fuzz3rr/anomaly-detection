@@ -21,9 +21,20 @@
     ],
     "label_column": "Label",
     "binary_positive_class": "BENIGN",
-    "binary_labels": ["BENIGN", "ATTACK"],
+    "binary_labels": [
+      "BENIGN",
+      "ATTACK"
+    ],
     "column_mapping": {},
-    "drop_columns": ["Unnamed: 0", "Flow ID", "Source IP", "Destination IP", "Timestamp", "Source Port", "Destination Port"]
+    "drop_columns": [
+      "Unnamed: 0",
+      "Flow ID",
+      "Source IP",
+      "Destination IP",
+      "Timestamp",
+      "Source Port",
+      "Destination Port"
+    ]
   },
   "darknet_tor": {
     "name": "Darknet Traffic Detection",
@@ -42,7 +53,20 @@
       "Src Port": "Source Port",
       "Dst Port": "Destination Port"
     },
-    "drop_columns": ["Unnamed: 0", "Flow ID", "Source IP", "Destination IP", "Timestamp", "Source Port", "Destination Port", "Src IP", "Dst IP", "Src Port", "Dst Port", "Label.1"],
+    "drop_columns": [
+      "Unnamed: 0",
+      "Flow ID",
+      "Source IP",
+      "Destination IP",
+      "Timestamp",
+      "Source Port",
+      "Destination Port",
+      "Src IP",
+      "Dst IP",
+      "Src Port",
+      "Dst Port",
+      "Label.1"
+    ],
     "multiclass_only": true
   },
   "darknet_app": {
@@ -62,7 +86,36 @@
       "Src Port": "Source Port",
       "Dst Port": "Destination Port"
     },
-    "drop_columns": ["Unnamed: 0", "Flow ID", "Source IP", "Destination IP", "Timestamp", "Source Port", "Destination Port", "Src IP", "Dst IP", "Src Port", "Dst Port", "Label"],
+    "drop_columns": [
+      "Unnamed: 0",
+      "Flow ID",
+      "Source IP",
+      "Destination IP",
+      "Timestamp",
+      "Source Port",
+      "Destination Port",
+      "Src IP",
+      "Dst IP",
+      "Src Port",
+      "Dst Port",
+      "Label"
+    ],
     "multiclass_only": true
+  },
+  "syscallsbinders": {
+    "name": "Syscalls Binders Classification",
+    "files": [
+      "data/feature_vectors_syscallsbinders_frequency_5_Cat.csv"
+    ],
+    "files_smaller": [
+      "data/feature_vectors_syscallsbinders_frequency_5_Cat_smaller.csv"
+    ],
+    "label_column": "Class",
+    "has_header": true,
+    "multiclass_only": true,
+    "binary_positive_class": null,
+    "binary_labels": null,
+    "column_mapping": {},
+    "drop_columns": []
   }
 }

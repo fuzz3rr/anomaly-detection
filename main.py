@@ -5,6 +5,26 @@ import os
 import sys
 import warnings
 
+
+class TeeOutput:
+    """Duplicate stdout to both console and a file."""
+    def __init__(self, filepath):
+        self.file = open(filepath, 'w', encoding='utf-8')
+        self.stdout = sys.stdout
+    
+    def write(self, message):
+        self.stdout.write(message)
+        self.file.write(message)
+        self.file.flush()
+    
+    def flush(self):
+        self.stdout.flush()
+        self.file.flush()
+    
+    def close(self):
+        self.file.close()
+        sys.stdout = self.stdout
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -461,12 +481,28 @@ Examples:
         action='store_true',
         help='Reduce output verbosity'
     )
+    parser.add_argument(
+        '--log-file', '-lf',
+        type=str,
+        help='Save all output to a log file (also prints to console)'
+    )
 
     args = parser.parse_args()
+
+    # Setup log file if specified
+    tee = None
+    if args.log_file:
+        log_dir = os.path.dirname(args.log_file)
+        if log_dir and not os.path.exists(log_dir):
+            os.makedirs(log_dir)
+        tee = TeeOutput(args.log_file)
+        sys.stdout = tee
 
     # Load datasets configuration
     if not os.path.exists(args.datasets_config):
         print(f"Error: Datasets config not found at '{args.datasets_config}'")
+        if tee:
+            tee.close()
         sys.exit(1)
 
     with open(args.datasets_config, 'r') as f:
@@ -575,6 +611,11 @@ Examples:
 
     print_header("ANALYSIS COMPLETED")
     print(f"\n📁 Output files saved to: {output_dir}/")
+
+    # Close log file if used
+    if tee:
+        print(f"📄 Log saved to: {args.log_file}")
+        tee.close()
 
 
 if __name__ == "__main__":

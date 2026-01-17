@@ -207,7 +207,7 @@ def plot_model_comparison(results_df, save_path):
     fig, axes = plt.subplots(1, 2, figsize=(14, 6))
 
     # Prepare data
-    configs = results_df['Config'].unique()
+    configs = results_df['Model Config'].unique()
     models = results_df['Model'].unique()
     classification_types = results_df['Classification Type'].unique()
 
@@ -225,7 +225,7 @@ def plot_model_comparison(results_df, save_path):
         width = 0.8 / len(configs)
 
         for i, config in enumerate(configs):
-            config_data = type_data[type_data['Config'] == config]
+            config_data = type_data[type_data['Model Config'] == config]
             accuracies = []
             f1_scores = []
 
