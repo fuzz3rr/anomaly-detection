@@ -1,0 +1,7 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Fast Test,DDoS Attack Detection,Random Forest,Binary,0.999677755193099,0.9996779008151875
+Fast Test,DDoS Attack Detection,XGBoost,Binary,0.9994546626344752,0.999455155024441
+Fast Test,DDoS Attack Detection,Support Vector Machine,Binary,0.9986862327103267,0.9986903641292117
+Fast Test,DDoS Attack Detection,Random Forest,Multiclass,0.8856278816122155,0.845491985199641
+Fast Test,DDoS Attack Detection,XGBoost,Multiclass,0.9257597541024243,0.9281432013301246
+Fast Test,DDoS Attack Detection,Support Vector Machine,Multiclass,0.8691933964602647,0.8315532822500926

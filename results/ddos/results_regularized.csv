@@ -1,0 +1,7 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Regularized,DDoS Attack Detection,Random Forest,Binary,0.9996281790689604,0.9996285706144137
+Regularized,DDoS Attack Detection,XGBoost,Binary,0.9996529671310297,0.9996532804700989
+Regularized,DDoS Attack Detection,Support Vector Machine,Binary,0.9983391998413564,0.9983473749716401
+Regularized,DDoS Attack Detection,Random Forest,Multiclass,0.8927172673640374,0.8591339638855496
+Regularized,DDoS Attack Detection,XGBoost,Multiclass,0.9268008527093352,0.9292018164247179
+Regularized,DDoS Attack Detection,Support Vector Machine,Multiclass,0.8676565366119676,0.829700732716891

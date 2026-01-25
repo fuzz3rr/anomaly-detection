@@ -1,0 +1,4 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+High Estimators,Darknet Traffic Detection,Random Forest,Multiclass,0.9825940718940509,0.9825656447223883
+High Estimators,Darknet Traffic Detection,XGBoost,Multiclass,0.9850325835610679,0.9850168488006688
+High Estimators,Darknet Traffic Detection,Support Vector Machine,Multiclass,0.9488963632541518,0.9481229844015888

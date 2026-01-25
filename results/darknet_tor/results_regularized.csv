@@ -1,0 +1,4 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Regularized,Darknet Traffic Detection,Random Forest,Multiclass,0.9825099852848433,0.982455300889855
+Regularized,Darknet Traffic Detection,XGBoost,Multiclass,0.9830775698969939,0.9830540348974468
+Regularized,Darknet Traffic Detection,Support Vector Machine,Multiclass,0.940403615724196,0.9390720160712575

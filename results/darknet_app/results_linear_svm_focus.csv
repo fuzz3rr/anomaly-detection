@@ -1,0 +1,4 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Linear SVM Focus,Darknet Application Classification,Random Forest,Multiclass,0.9842666666666666,0.9835500066786197
+Linear SVM Focus,Darknet Application Classification,XGBoost,Multiclass,0.9849333333333333,0.984463904198094
+Linear SVM Focus,Darknet Application Classification,Support Vector Machine,Multiclass,0.9446,0.9306795749838579

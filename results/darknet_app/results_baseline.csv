@@ -1,0 +1,4 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Baseline,Darknet Application Classification,Random Forest,Multiclass,0.9842666666666666,0.9835500066786197
+Baseline,Darknet Application Classification,XGBoost,Multiclass,0.9849333333333333,0.984463904198094
+Baseline,Darknet Application Classification,Support Vector Machine,Multiclass,0.9596,0.9528060563251215

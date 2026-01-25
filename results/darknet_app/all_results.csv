@@ -1,0 +1,16 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Baseline,Darknet Application Classification,Random Forest,Multiclass,0.9842666666666666,0.9835500066786197
+Baseline,Darknet Application Classification,XGBoost,Multiclass,0.9849333333333333,0.984463904198094
+Baseline,Darknet Application Classification,Support Vector Machine,Multiclass,0.9596,0.9528060563251215
+Fast Test,Darknet Application Classification,Random Forest,Multiclass,0.9743333333333334,0.9724324606994684
+Fast Test,Darknet Application Classification,XGBoost,Multiclass,0.9815333333333334,0.9808582500114108
+Fast Test,Darknet Application Classification,Support Vector Machine,Multiclass,0.9591333333333333,0.9525172229139509
+High Estimators,Darknet Application Classification,Random Forest,Multiclass,0.984,0.9833625072774841
+High Estimators,Darknet Application Classification,XGBoost,Multiclass,0.9847333333333333,0.9842590874517415
+High Estimators,Darknet Application Classification,Support Vector Machine,Multiclass,0.9596,0.9528060563251215
+Linear SVM Focus,Darknet Application Classification,Random Forest,Multiclass,0.9842666666666666,0.9835500066786197
+Linear SVM Focus,Darknet Application Classification,XGBoost,Multiclass,0.9849333333333333,0.984463904198094
+Linear SVM Focus,Darknet Application Classification,Support Vector Machine,Multiclass,0.9446,0.9306795749838579
+Regularized,Darknet Application Classification,Random Forest,Multiclass,0.9796,0.9781902121185565
+Regularized,Darknet Application Classification,XGBoost,Multiclass,0.9825333333333334,0.9818851189366132
+Regularized,Darknet Application Classification,Support Vector Machine,Multiclass,0.9577333333333333,0.950319078123474

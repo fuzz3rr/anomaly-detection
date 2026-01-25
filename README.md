@@ -29,7 +29,7 @@ Universal machine learning framework for network traffic classification. Support
 │   ├── model_regularized.json
 │   └── model_linear_svm.json
 ├── data/                   # CSV data files (not included)
-└── outputs/                # Generated results and plots
+└── results/                # Generated results and plots
 ```
 
 ## Installation
@@ -148,19 +148,19 @@ Binary classification (BENIGN vs ATTACK) and multiclass classification (attack t
 
 **Class Distribution:**
 
-![Class Distribution](outputs/ddos/class_distribution.png)
+![Class Distribution](results/ddos/class_distribution.png)
 
 **Model Comparison:**
 
-![Model Comparison](outputs/ddos/model_comparison.png)
+![Model Comparison](results/ddos/model_comparison.png)
 
 **Confusion Matrices (Baseline):**
 
-![Confusion Matrices](outputs/ddos/confusion_matrices_baseline.png)
+![Confusion Matrices](results/ddos/confusion_matrices_baseline.png)
 
 **Feature Importance (Baseline):**
 
-![Feature Importance](outputs/ddos/feature_importance_baseline.png)
+![Feature Importance](results/ddos/feature_importance_baseline.png)
 
 </details>
 
@@ -187,19 +187,19 @@ Multiclass classification: Tor, Non-Tor, VPN, Non-VPN traffic.
 
 **Class Distribution:**
 
-![Class Distribution](outputs/darknet_tor/class_distribution.png)
+![Class Distribution](results/darknet_tor/class_distribution.png)
 
 **Model Comparison:**
 
-![Model Comparison](outputs/darknet_tor/model_comparison.png)
+![Model Comparison](results/darknet_tor/model_comparison.png)
 
 **Confusion Matrices (Baseline):**
 
-![Confusion Matrices](outputs/darknet_tor/confusion_matrices_baseline.png)
+![Confusion Matrices](results/darknet_tor/confusion_matrices_baseline.png)
 
 **Feature Importance (Baseline):**
 
-![Feature Importance](outputs/darknet_tor/feature_importance_baseline.png)
+![Feature Importance](results/darknet_tor/feature_importance_baseline.png)
 
 </details>
 
@@ -226,19 +226,19 @@ Multiclass classification: AUDIO, VIDEO, CHAT, BROWSING, etc.
 
 **Class Distribution:**
 
-![Class Distribution](outputs/darknet_app/class_distribution.png)
+![Class Distribution](results/darknet_app/class_distribution.png)
 
 **Model Comparison:**
 
-![Model Comparison](outputs/darknet_app/model_comparison.png)
+![Model Comparison](results/darknet_app/model_comparison.png)
 
 **Confusion Matrices (Baseline):**
 
-![Confusion Matrices](outputs/darknet_app/confusion_matrices_baseline.png)
+![Confusion Matrices](results/darknet_app/confusion_matrices_baseline.png)
 
 **Feature Importance (Baseline):**
 
-![Feature Importance](outputs/darknet_app/feature_importance_baseline.png)
+![Feature Importance](results/darknet_app/feature_importance_baseline.png)
 
 </details>
 
@@ -265,19 +265,19 @@ Multiclass classification of syscalls/binders patterns for malware analysis.
 
 **Class Distribution:**
 
-![Class Distribution](outputs/syscallsbinders/class_distribution.png)
+![Class Distribution](results/syscallsbinders/class_distribution.png)
 
 **Model Comparison:**
 
-![Model Comparison](outputs/syscallsbinders/model_comparison.png)
+![Model Comparison](results/syscallsbinders/model_comparison.png)
 
 **Confusion Matrices (Baseline):**
 
-![Confusion Matrices](outputs/syscallsbinders/confusion_matrices_baseline.png)
+![Confusion Matrices](results/syscallsbinders/confusion_matrices_baseline.png)
 
 **Feature Importance (Baseline):**
 
-![Feature Importance](outputs/syscallsbinders/feature_importance_baseline.png)
+![Feature Importance](results/syscallsbinders/feature_importance_baseline.png)
 
 </details>
 
@@ -346,7 +346,7 @@ Each config in `models/` directory defines:
 
 ## Output Files
 
-After running analysis, the following files are generated in `outputs/<dataset>/`:
+After running analysis, the following files are generated in `results/<dataset>/`:
 
 | File | Description |
 |------|-------------|

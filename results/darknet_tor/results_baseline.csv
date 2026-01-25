@@ -1,0 +1,4 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Baseline,Darknet Traffic Detection,Random Forest,Multiclass,0.98370821946605,0.9836759790095946
+Baseline,Darknet Traffic Detection,XGBoost,Multiclass,0.9848854319949548,0.9848652007127948
+Baseline,Darknet Traffic Detection,Support Vector Machine,Multiclass,0.9488963632541518,0.9481229844015888

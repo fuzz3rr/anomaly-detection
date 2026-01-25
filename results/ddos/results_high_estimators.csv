@@ -1,0 +1,7 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+High Estimators,DDoS Attack Detection,Random Forest,Binary,0.9998016955034456,0.999801814949036
+High Estimators,DDoS Attack Detection,XGBoost,Binary,0.9998760596896534,0.999876115698149
+High Estimators,DDoS Attack Detection,Support Vector Machine,Binary,0.9986614446482573,0.9986658530256346
+High Estimators,DDoS Attack Detection,Random Forest,Multiclass,0.8938327301571564,0.8616631803668173
+High Estimators,DDoS Attack Detection,XGBoost,Multiclass,0.9267264885231272,0.9292193967941059
+High Estimators,DDoS Attack Detection,Support Vector Machine,Multiclass,0.869862674136136,0.8322253361627859

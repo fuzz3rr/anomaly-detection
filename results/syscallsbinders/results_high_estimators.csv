@@ -1,0 +1,4 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+High Estimators,Syscalls Binders Classification,Random Forest,Multiclass,0.9408045977011494,0.9408436246131656
+High Estimators,Syscalls Binders Classification,XGBoost,Multiclass,0.9456896551724138,0.9456466058675616
+High Estimators,Syscalls Binders Classification,Support Vector Machine,Multiclass,0.7816091954022989,0.7758379953066767

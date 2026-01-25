@@ -1,0 +1,4 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Fast Test,Darknet Application Classification,Random Forest,Multiclass,0.9743333333333334,0.9724324606994684
+Fast Test,Darknet Application Classification,XGBoost,Multiclass,0.9815333333333334,0.9808582500114108
+Fast Test,Darknet Application Classification,Support Vector Machine,Multiclass,0.9591333333333333,0.9525172229139509

@@ -1,0 +1,4 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Baseline,Syscalls Binders Classification,Random Forest,Multiclass,0.9451149425287356,0.9451077072970325
+Baseline,Syscalls Binders Classification,XGBoost,Multiclass,0.9456896551724138,0.9456127978989043
+Baseline,Syscalls Binders Classification,Support Vector Machine,Multiclass,0.7816091954022989,0.7758379953066767

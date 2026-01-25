@@ -474,7 +474,7 @@ Examples:
     parser.add_argument(
         '--output-dir', '-o',
         type=str,
-        help='Output directory (default: outputs/<dataset>)'
+        help='Output directory (default: results/<dataset>)'
     )
     parser.add_argument(
         '--quiet', '-q',
@@ -539,7 +539,7 @@ Examples:
         file_paths = dataset_config["files"]
 
     # Setup output directory
-    output_dir = args.output_dir or f"outputs/{args.dataset}"
+    output_dir = args.output_dir or f"results/{args.dataset}"
 
     if not check_prerequisites(file_paths, output_dir):
         sys.exit(1)

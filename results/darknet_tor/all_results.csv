@@ -1,0 +1,16 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Baseline,Darknet Traffic Detection,Random Forest,Multiclass,0.98370821946605,0.9836759790095946
+Baseline,Darknet Traffic Detection,XGBoost,Multiclass,0.9848854319949548,0.9848652007127948
+Baseline,Darknet Traffic Detection,Support Vector Machine,Multiclass,0.9488963632541518,0.9481229844015888
+Fast Test,Darknet Traffic Detection,Random Forest,Multiclass,0.9767290309018288,0.9765284846351915
+Fast Test,Darknet Traffic Detection,XGBoost,Multiclass,0.9739962161025857,0.9738807252140319
+Fast Test,Darknet Traffic Detection,Support Vector Machine,Multiclass,0.9489384065587555,0.9481797024477817
+High Estimators,Darknet Traffic Detection,Random Forest,Multiclass,0.9825940718940509,0.9825656447223883
+High Estimators,Darknet Traffic Detection,XGBoost,Multiclass,0.9850325835610679,0.9850168488006688
+High Estimators,Darknet Traffic Detection,Support Vector Machine,Multiclass,0.9488963632541518,0.9481229844015888
+Linear SVM Focus,Darknet Traffic Detection,Random Forest,Multiclass,0.98370821946605,0.9836759790095946
+Linear SVM Focus,Darknet Traffic Detection,XGBoost,Multiclass,0.9848854319949548,0.9848652007127948
+Linear SVM Focus,Darknet Traffic Detection,Support Vector Machine,Multiclass,0.911709060332142,0.9096132742786914
+Regularized,Darknet Traffic Detection,Random Forest,Multiclass,0.9825099852848433,0.982455300889855
+Regularized,Darknet Traffic Detection,XGBoost,Multiclass,0.9830775698969939,0.9830540348974468
+Regularized,Darknet Traffic Detection,Support Vector Machine,Multiclass,0.940403615724196,0.9390720160712575

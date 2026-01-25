@@ -1,0 +1,31 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Baseline,DDoS Attack Detection,Random Forest,Binary,0.9997769074413763,0.9997770082566682
+Baseline,DDoS Attack Detection,XGBoost,Binary,0.9998016955034456,0.999801814949036
+Baseline,DDoS Attack Detection,Support Vector Machine,Binary,0.9986614446482573,0.9986658530256346
+Baseline,DDoS Attack Detection,Random Forest,Multiclass,0.8940062465916415,0.8620872064944054
+Baseline,DDoS Attack Detection,XGBoost,Multiclass,0.9269991572058897,0.9294972099342511
+Baseline,DDoS Attack Detection,Support Vector Machine,Multiclass,0.869862674136136,0.8322253361627859
+Fast Test,DDoS Attack Detection,Random Forest,Binary,0.999677755193099,0.9996779008151875
+Fast Test,DDoS Attack Detection,XGBoost,Binary,0.9994546626344752,0.999455155024441
+Fast Test,DDoS Attack Detection,Support Vector Machine,Binary,0.9986862327103267,0.9986903641292117
+Fast Test,DDoS Attack Detection,Random Forest,Multiclass,0.8856278816122155,0.845491985199641
+Fast Test,DDoS Attack Detection,XGBoost,Multiclass,0.9257597541024243,0.9281432013301246
+Fast Test,DDoS Attack Detection,Support Vector Machine,Multiclass,0.8691933964602647,0.8315532822500926
+High Estimators,DDoS Attack Detection,Random Forest,Binary,0.9998016955034456,0.999801814949036
+High Estimators,DDoS Attack Detection,XGBoost,Binary,0.9998760596896534,0.999876115698149
+High Estimators,DDoS Attack Detection,Support Vector Machine,Binary,0.9986614446482573,0.9986658530256346
+High Estimators,DDoS Attack Detection,Random Forest,Multiclass,0.8938327301571564,0.8616631803668173
+High Estimators,DDoS Attack Detection,XGBoost,Multiclass,0.9267264885231272,0.9292193967941059
+High Estimators,DDoS Attack Detection,Support Vector Machine,Multiclass,0.869862674136136,0.8322253361627859
+Linear SVM Focus,DDoS Attack Detection,Random Forest,Binary,0.9997769074413763,0.9997770082566682
+Linear SVM Focus,DDoS Attack Detection,XGBoost,Binary,0.9998016955034456,0.999801814949036
+Linear SVM Focus,DDoS Attack Detection,Support Vector Machine,Binary,0.9987605968965346,0.9987657818014171
+Linear SVM Focus,DDoS Attack Detection,Random Forest,Multiclass,0.8940062465916415,0.8620872064944054
+Linear SVM Focus,DDoS Attack Detection,XGBoost,Multiclass,0.9269991572058897,0.9294972099342511
+Linear SVM Focus,DDoS Attack Detection,Support Vector Machine,Multiclass,0.8795052302810966,0.8420427341971422
+Regularized,DDoS Attack Detection,Random Forest,Binary,0.9996281790689604,0.9996285706144137
+Regularized,DDoS Attack Detection,XGBoost,Binary,0.9996529671310297,0.9996532804700989
+Regularized,DDoS Attack Detection,Support Vector Machine,Binary,0.9983391998413564,0.9983473749716401
+Regularized,DDoS Attack Detection,Random Forest,Multiclass,0.8927172673640374,0.8591339638855496
+Regularized,DDoS Attack Detection,XGBoost,Multiclass,0.9268008527093352,0.9292018164247179
+Regularized,DDoS Attack Detection,Support Vector Machine,Multiclass,0.8676565366119676,0.829700732716891

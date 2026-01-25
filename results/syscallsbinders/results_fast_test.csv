@@ -1,0 +1,4 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Fast Test,Syscalls Binders Classification,Random Forest,Multiclass,0.9129310344827586,0.9125437509601945
+Fast Test,Syscalls Binders Classification,XGBoost,Multiclass,0.9270114942528735,0.9267601948214671
+Fast Test,Syscalls Binders Classification,Support Vector Machine,Multiclass,0.778448275862069,0.7724830045997512

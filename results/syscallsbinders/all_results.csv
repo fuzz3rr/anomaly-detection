@@ -1,0 +1,16 @@
+Model Config,Dataset,Model,Classification Type,Accuracy,F1-score
+Baseline,Syscalls Binders Classification,Random Forest,Multiclass,0.9451149425287356,0.9451077072970325
+Baseline,Syscalls Binders Classification,XGBoost,Multiclass,0.9456896551724138,0.9456127978989043
+Baseline,Syscalls Binders Classification,Support Vector Machine,Multiclass,0.7816091954022989,0.7758379953066767
+Fast Test,Syscalls Binders Classification,Random Forest,Multiclass,0.9129310344827586,0.9125437509601945
+Fast Test,Syscalls Binders Classification,XGBoost,Multiclass,0.9270114942528735,0.9267601948214671
+Fast Test,Syscalls Binders Classification,Support Vector Machine,Multiclass,0.778448275862069,0.7724830045997512
+High Estimators,Syscalls Binders Classification,Random Forest,Multiclass,0.9408045977011494,0.9408436246131656
+High Estimators,Syscalls Binders Classification,XGBoost,Multiclass,0.9456896551724138,0.9456466058675616
+High Estimators,Syscalls Binders Classification,Support Vector Machine,Multiclass,0.7816091954022989,0.7758379953066767
+Linear SVM Focus,Syscalls Binders Classification,Random Forest,Multiclass,0.9451149425287356,0.9451077072970325
+Linear SVM Focus,Syscalls Binders Classification,XGBoost,Multiclass,0.9456896551724138,0.9456127978989043
+Linear SVM Focus,Syscalls Binders Classification,Support Vector Machine,Multiclass,0.8652298850574712,0.8637456529516364
+Regularized,Syscalls Binders Classification,Random Forest,Multiclass,0.9304597701149425,0.9303818395159849
+Regularized,Syscalls Binders Classification,XGBoost,Multiclass,0.9408045977011494,0.9407400878039723
+Regularized,Syscalls Binders Classification,Support Vector Machine,Multiclass,0.7632183908045977,0.7558797888987975
